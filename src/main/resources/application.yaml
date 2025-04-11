@@ -1,0 +1,20 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,env,refresh
+  server:
+    port: 8081
+
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          format: json
+
+server:
+  port: 8888
+

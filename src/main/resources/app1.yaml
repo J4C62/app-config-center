@@ -1,0 +1,10 @@
+application:
+  channels:
+    - source: my.source
+      type: my.type
+      channel:
+        - EMAIL
+    - source: source3
+      type: type1
+      channel:
+
