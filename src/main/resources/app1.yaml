@@ -7,4 +7,11 @@ application:
     - source: source3
       type: type1
       channel:
+  templates:
+    - source: my.source
+      type: my.type
+      template: "<!DOCTYPE html><html xmlns:th='http://www.thymeleaf.org'><head><meta charset='UTF-8'><title>Notificación</title></head><body><h1>Hola, <span th:text='${nombre}'>Usuario</span>!</h1><p>Hemos recibido un evento.</p><p th:if='${mensaje != null}'>Mensaje adicional: <em th:text='${mensaje}'>Aquí va el mensaje</em></p><footer><hr><p>Este es un email automático. No respondas a este mensaje.</p></footer></body></html>"
+    - source: source3
+      type: type1
+      template: "<h1>Hello</h1>"
 
